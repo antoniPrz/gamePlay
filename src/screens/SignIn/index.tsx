@@ -1,33 +1,41 @@
 import React, {useState}from "react";
-import { Text, View , TextInput } from 'react-native';
+import { 
+  Text, 
+  View ,
+  Image,
+} from 'react-native';
 
+import IllustrationImg from '../../assets/illustration.png';
 import { estilos } from "./styles";
 
 export function SignIn() {
-
-    const [textoInput, setTextoInput ] = useState('prueba');
+    const [textoInput, setTextoInput ] = useState('');
 
     return (
         <View style={estilos.container}>
-            <Text >
-                Primera App kkkkkkkkkkkkkk
-            </Text>
-
-            <TextInput style={estilos.input}
-            onChangeText={(valor) => setTextoInput(valor)}
             
-            />
+        <Image 
+        source= {IllustrationImg}
+        style={estilos.image}
+         />
 
-            <Text>
-                Usted escribió .....{ textoInput }
+        <View style={estilos.content}>
+            <Text style={estilos.title}>
+                Organize sus {`\n`}
+                partidos de {`\n`}
+                Realidad Virtual
             </Text>
-
-            
-
+            <Text style={estilos.subTitle}>
+                Cree grupos para encontrarse{`\n`}
+                 y jugar con sus amigos 
+            </Text>
         </View>
 
-    )
 
+
+        </View>
+       
+    );
 }
 
 
