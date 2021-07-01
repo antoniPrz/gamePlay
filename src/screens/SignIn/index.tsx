@@ -3,6 +3,7 @@ import {
   Text, 
   View ,
   Image,
+  StatusBar,
 } from 'react-native';
 
 import IllustrationImg from '../../assets/illustration.png';
@@ -13,10 +14,15 @@ export function SignIn() {
 
     return (
         <View style={estilos.container}>
+            <StatusBar barStyle='light-content'
+            
+            
+            />
             
         <Image 
         source= {IllustrationImg}
         style={estilos.image}
+        resizeMode='stretch'
          />
 
         <View style={estilos.content}>
