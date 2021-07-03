@@ -6,6 +6,7 @@ import {
   StatusBar,
 } from 'react-native';
 
+import { ButtonIcon } from "../../components/ButtonIcon";
 import IllustrationImg from '../../assets/illustration.png';
 import { estilos } from "./styles";
 
@@ -15,8 +16,6 @@ export function SignIn() {
     return (
         <View style={estilos.container}>
             <StatusBar barStyle='light-content'
-            
-            
             />
             
         <Image 
@@ -35,10 +34,9 @@ export function SignIn() {
                 Cree grupos para encontrarse{`\n`}
                  y jugar con sus amigos 
             </Text>
+
+        <ButtonIcon  title ="Entrar con Discord " activeOpacity= {0.6}/>
         </View>
-
-
-
         </View>
        
     );
